@@ -1,6 +1,7 @@
 # ExpoCenfo2024-OpenJJL
   Nuestro proyecto es un asistente cardiológico que genera eventos en google calendar de manera automatizada utilizando el APi de Chat GPT. Genera eventos relacionados con la actividad física y la salud alimenticia.Se desarrollo un codigo en c++ para la captura de datos en el software Arduino IDE.
-# Librerias externas usadas en el proyecto
+## Librerias 
+En el proyecto se utilizaron las siguientes liberias externas:
 1.[Arduino Json](https://arduinojson.org/?utm_source=meta&utm_medium=library.properties)
 2.[Fast Led](https://github.com/FastLED/FastLED)
 3.[Pulse Sensor Playgrund](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
