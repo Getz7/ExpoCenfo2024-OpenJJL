@@ -18,7 +18,7 @@ CRGB leds[NUM_LEDS];
 
 const char* ssid = "PlayStation";
 const char* password = "55225517";
-const char* serverUrl = "https://192.168.0.27:5000/api/assistant-pulse-rate";
+const char* serverUrl = "http://127.0.0.1:5000/api/assistant-pulse-rate";
 const int PulseWire = 33;
 int Threshold = 550;
 LCD_I2C lcd(0x27, 16, 2);
