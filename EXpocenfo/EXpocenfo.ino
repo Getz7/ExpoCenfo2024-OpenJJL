@@ -16,9 +16,9 @@
 #define BLOCK 1
 CRGB leds[NUM_LEDS];
 
-const char* ssid = "PlayStation";
-const char* password = "55225517";
-const char* serverUrl = "http://127.0.0.1:5000/api/assistant-pulse-rate";
+const char* ssid = "Visitas";
+const char* password = "UC-22Visitas";
+const char* serverUrl = "https://cardiology-assistant-v2.vercel.app/api/assistant-pulse-rate";
 const int PulseWire = 33;
 int Threshold = 550;
 LCD_I2C lcd(0x27, 16, 2);
@@ -47,11 +47,19 @@ void connectToWiFi() {
 }
 
 void waitForRFID() {
+  bool success = false;
   lcd.print("Acerca");
   lcd.setCursor(0, 1);
   lcd.print("la tarjeta");
-  while (!rfidReader.detectTag()) {
-    delay(500); // Espera para evitar lecturas excesivas
+  Serial.println("Esperando tarjeta...");
+  while (!success) {
+    success = rfidReader.detectTag();
+    if (success) {
+      Serial.println("Tarjeta detectada!");
+    } else {
+      Serial.println("No se detecta tarjeta.");
+    }
+    delay(500);
   }
   lcd.clear();
   lcd.print("Tarjeta");
@@ -68,7 +76,8 @@ void setup() {
   FastLED.addLeds<LED_TYPE, DATA_PIN>(leds, NUM_LEDS);
   Serial.begin(115200);
 
-
+  // Initialize RFID reader
+  rfidReader.init();
   
   connectToWiFi();
   
