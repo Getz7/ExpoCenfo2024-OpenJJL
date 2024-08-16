@@ -18,4 +18,36 @@ En el proyecto se utilizaron los siguientes componentes de hardware:
   4. [Cable tipo C](https://www.crcibernetica.com/usb-type-c-cable-1m/)
   5. [Pantalla LCD](https://www.crcibernetica.com/16x2-lcd-with-i2c-blue/)
   6. [Sensor RFID](https://www.crcibernetica.com/rc522-rfid-module/)
-     
+# Instrucciones para correr el API
+Clone el proyecto
+
+```bash
+  git clone https://github.com/JgeovanniAm/cardiology-assistant
+```
+
+Vaya al directorio del proyecto
+
+```bash
+  cd cardiology-assistant
+```
+
+Setup pip
+
+```bash
+  python3 -m venv .venv  
+```
+```bash
+  source .venv/bin/activate
+```
+
+Instale dependencias
+
+```bash
+  pip install -r requirements.txt      
+```
+
+Ejecute el servidor
+
+```bash
+  python app.py
+```
