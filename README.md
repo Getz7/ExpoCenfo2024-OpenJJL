@@ -20,7 +20,7 @@ En el proyecto se utilizaron los siguientes componentes de hardware:
   6. [Sensor RFID](https://www.crcibernetica.com/rc522-rfid-module/)
 
 # Link del API deployed
-(https://cardiology-assistant-v2.vercel.app/)
+https://cardiology-assistant-v2.vercel.app/
 # Instrucciones para correr de manera local el API
 Clone el proyecto
 
