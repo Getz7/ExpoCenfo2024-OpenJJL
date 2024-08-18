@@ -16,8 +16,8 @@
 #define BLOCK 1
 CRGB leds[NUM_LEDS];
 
-const char* ssid = "Visitas";
-const char* password = "UC-22Visitas";
+const char* ssid = "PlayStation";
+const char* password = "55225517";
 const char* serverUrl = "https://cardiology-assistant-v2.vercel.app/api/assistant-pulse-rate";
 const int PulseWire = 33;
 int Threshold = 550;
@@ -73,14 +73,18 @@ void setup() {
   lcd.begin(); // Inicializa la comunicación con la pantalla LCD
   lcd.display(); // Enciende la pantalla LCD
   lcd.backlight();
-  FastLED.addLeds<LED_TYPE, DATA_PIN>(leds, NUM_LEDS);
   Serial.begin(115200);
 
   // Initialize RFID reader
   rfidReader.init();
-  
+
+  // Initialize LEDs
+  FastLED.addLeds<LED_TYPE, DATA_PIN, GRB>(leds, NUM_LEDS);
+  leds[0] = CRGB::Black; // Ensure the LED is off initially
+  FastLED.show();
+
   connectToWiFi();
-  
+
   // Configura el objeto PulseSensor, asignando nuestras variables a él
   pulseSensor.analogInput(PulseWire);
   pulseSensor.setThreshold(Threshold);
@@ -90,6 +94,7 @@ void setup() {
     lcd.clear();
   }
 }
+
 
 void loop() {
   waitForRFID();
@@ -135,12 +140,13 @@ void loop() {
 
   if (httpResponseCode > 0) {
     if (httpResponseCode == 200) {
-      lcd.print("El usuario ya tiene");
+      lcd.print("Ya tienes");
       lcd.setCursor(0, 1);
       lcd.print("Planes");
       leds[0] = CRGB(0, 0, 255);  // Azul
       FastLED.show();
       delay(3000);  // Espera 1 segundo
+       lcd.clear();
       leds[0] = CRGB(0, 0, 0);  // Apaga el LED
       FastLED.show();
     } else if (httpResponseCode == 202) {
