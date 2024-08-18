@@ -5,6 +5,7 @@
 
 # Desarrolladores 
 Jimmy Alvarez Mendoza
+
 Jose Ignacio Vargas Jaramillo
 ## Librerias 
 En el proyecto se utilizaron las siguientes liberias externas:
