@@ -18,7 +18,10 @@ En el proyecto se utilizaron los siguientes componentes de hardware:
   4. [Cable tipo C](https://www.crcibernetica.com/usb-type-c-cable-1m/)
   5. [Pantalla LCD](https://www.crcibernetica.com/16x2-lcd-with-i2c-blue/)
   6. [Sensor RFID](https://www.crcibernetica.com/rc522-rfid-module/)
-# Instrucciones para correr el API
+
+# Link del API deployed
+(https://cardiology-assistant-v2.vercel.app/)
+# Instrucciones para correr de manera local el API
 Clone el proyecto
 
 ```bash
