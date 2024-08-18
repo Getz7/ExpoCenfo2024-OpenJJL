@@ -16,7 +16,7 @@ En el proyecto se utilizaron las siguientes liberias externas:
   4. [LCD-I2C](https://github.com/hasenradball/LCD-I2C)
   5. [EasyMFRC522](https://github.com/pablo-sampaio/easy_mfrc522)
 # Organización del repositorio
-  1."API" código del API
+
 
 ## Hardware 
 En el proyecto se utilizaron los siguientes componentes de hardware:
