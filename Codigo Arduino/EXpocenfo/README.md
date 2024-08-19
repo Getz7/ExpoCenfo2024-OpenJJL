@@ -1,4 +1,4 @@
-# Proyecto: Monitoreo de Frecuencia Cardíaca con Arduino y Envío de Datos a un Servidor
+# Proyecto: Monitoreo de Frecuencia Cardíaca con Ideaboard y Envío de Datos a un Servidor
 Este proyecto utiliza un sensor de pulso, un lector RFID, LEDs, una pantalla LCD y un módulo WiFi para medir la frecuencia cardíaca de una persona y enviar los datos a un servidor web. La pantalla LCD muestra información relevante durante el proceso, y los LEDs indican diferentes estados en función de la respuesta del servidor.
 
 ## Descripción del Hardware Utilizado
@@ -17,8 +17,8 @@ Este proyecto utiliza un sensor de pulso, un lector RFID, LEDs, una pantalla LCD
 - **Pines del lector RFID**: `4 (SDA)` y `5 (SCK)`
 
 ### Credenciales de WiFi:
-- **SSID**: `PlayStation`
-- **Contraseña**: `55225517`
+- **SSID**: ` depende de conexión`
+- **Contraseña**: `depende de conexión`
 
 ### URL del Servidor:
 - **serverUrl**: `https://cardiology-assistant-v2.vercel.app/api/assistant-pulse-rate`
