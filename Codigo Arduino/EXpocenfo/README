@@ -1,3 +1,3 @@
-# Proyecto: Monitoreo de Frecuencia Cardíaca con Arduino y Envío de Datos a un Servidor
+## Proyecto: Monitoreo de Frecuencia Cardíaca con Arduino y Envío de Datos a un Servidor
 Este proyecto utiliza un sensor de pulso, un lector RFID, LEDs, una pantalla LCD y un módulo WiFi para medir la frecuencia cardíaca de una persona y enviar los datos a un servidor web. La pantalla LCD muestra información relevante durante el proceso, y los LEDs indican diferentes estados en función de la respuesta del servidor.
- proceder. Es útil para asegurar que el usuario está autorizado antes de medir su frecuencia cardíaca.
+proceder. Es útil para asegurar que el usuario está autorizado antes de medir su frecuencia cardíaca.
