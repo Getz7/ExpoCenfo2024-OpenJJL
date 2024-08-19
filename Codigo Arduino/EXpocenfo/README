@@ -1,6 +1,4 @@
-
 # Proyecto: Monitoreo de Frecuencia Cardíaca con Arduino y Envío de Datos a un Servidor
-
 Este proyecto utiliza un sensor de pulso, un lector RFID, LEDs, una pantalla LCD y un módulo WiFi para medir la frecuencia cardíaca de una persona y enviar los datos a un servidor web. La pantalla LCD muestra información relevante durante el proceso, y los LEDs indican diferentes estados en función de la respuesta del servidor.
 
 ## Descripción del Hardware Utilizado
@@ -11,7 +9,6 @@ Este proyecto utiliza un sensor de pulso, un lector RFID, LEDs, una pantalla LCD
 - **FastLED**: Controla los LEDs, los cuales muestran diferentes colores según el estado de la operación.
 - **LCD-I2C**: Pantalla LCD utilizada para mostrar mensajes al usuario.
 - **EasyMFRC522**: Lector RFID que se utiliza para identificar la tarjeta antes de comenzar a medir la frecuencia cardíaca.
-
 ## Configuración de Hardware
 
 ### Pines Utilizados:
