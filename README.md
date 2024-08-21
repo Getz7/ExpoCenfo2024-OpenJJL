@@ -17,7 +17,7 @@ En el proyecto se utilizaron las siguientes liberias externas:
 
   1. [Arduino Json](https://arduinojson.org/?utm_source=meta&utm_medium=library.properties)
   2. [Fast Led](https://github.com/FastLED/FastLED)
-  3. [Pulse Sensor Playgrund](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
+  3. [Pulse Sensor Playground](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
   4. [LCD-I2C](https://github.com/hasenradball/LCD-I2C)
   5. [EasyMFRC522](https://github.com/pablo-sampaio/easy_mfrc522)
 # Organización del repositorio
